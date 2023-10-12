@@ -9,6 +9,8 @@ body {
   max-width: 400px;
   justify-content: center;
   margin: 0 auto;
+  margin-top: 50px;
+  top: 50%;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -57,4 +59,12 @@ li {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.letter {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
 }

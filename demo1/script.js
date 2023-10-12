@@ -43,6 +43,7 @@ function saveTask(taskText) {
   let tasks = getTasksFromStorage();
   tasks.push(taskText);
   localStorage.setItem("tasks", JSON.stringify(tasks));
+  console.log(tasks);
 }
 
 function removeTask(taskText) {
@@ -78,4 +79,17 @@ function loadTasks() {
       removeTask(taskText);
     });
   });
+}
+
+// create function to show hello world alert
+function helloWorld() {
+  alert("Hello World!");
+}
+
+//create function to show cookies alert for user to accept when vist website it shloud show up only once per session  and not show up again when user refresh the page or visit another page
+function cookies() {
+  if (sessionStorage.getItem("cookies") != "true") {
+    alert("This website uses cookies");
+    sessionStorage.setItem("cookies", "true");
+  }
 }
